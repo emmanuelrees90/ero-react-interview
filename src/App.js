@@ -8,7 +8,7 @@ import MyForm from 'components/forms/forms';
 
 function App() {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename="/ero-react-interview">
             <Routes>
                 <Route path="/ero-react-interview" element={<Home />}>
                     <Route index element={<Home />} />
