@@ -1,25 +1,24 @@
-import logo from './logo.svg';
+import { Home } from 'components/home/home';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
+import React from 'react';
+import { Table } from 'components/table-react/table';
+import { Hackerrank } from 'components/hackerrank/hackerrank';
+import MyForm from 'components/forms/forms';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Home />}>
+                    <Route index element={<Home />} />
+                </Route>
+                <Route path="/table" element={<Table />} />
+                <Route path="/hack" element={<Hackerrank />} />
+                <Route path="/form" element={<MyForm />} />
+            </Routes>
+        </BrowserRouter>
+    );
 }
 
 export default App;

@@ -1,0 +1,57 @@
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: auto;
+    background-color: whitesmoke;
+    border-radius: 5px;
+
+}
+
+.card-text {
+    padding: 10px;
+}
+
+.card:hover {
+    transform: scale(110%);
+}
+
+.search {
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-input {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+/* made an assuption here for mobile size to be screen sizes below 765px */
+
+@media screen and (max-width: 765px) {
+    .container {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 10px;
+    }
+}
+
+/* made an assuption here for tablet size to between 765px and 920px */
+@media screen and (min-width: 765px) and (max-width: 920px) {
+    .container {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+    }
+}
