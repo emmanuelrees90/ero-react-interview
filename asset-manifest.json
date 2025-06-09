@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/emmanuelrees90/ero-react-interview/static/css/main.5a33cc5c.css",
-    "main.js": "/emmanuelrees90/ero-react-interview/static/js/main.1759cc36.js",
-    "static/js/453.b901e63a.chunk.js": "/emmanuelrees90/ero-react-interview/static/js/453.b901e63a.chunk.js",
-    "index.html": "/emmanuelrees90/ero-react-interview/index.html",
-    "main.5a33cc5c.css.map": "/emmanuelrees90/ero-react-interview/static/css/main.5a33cc5c.css.map",
-    "main.1759cc36.js.map": "/emmanuelrees90/ero-react-interview/static/js/main.1759cc36.js.map",
-    "453.b901e63a.chunk.js.map": "/emmanuelrees90/ero-react-interview/static/js/453.b901e63a.chunk.js.map"
+    "main.css": "/static/css/main.5a33cc5c.css",
+    "main.js": "/static/js/main.286c64ac.js",
+    "static/js/453.b901e63a.chunk.js": "/static/js/453.b901e63a.chunk.js",
+    "index.html": "/index.html",
+    "main.5a33cc5c.css.map": "/static/css/main.5a33cc5c.css.map",
+    "main.286c64ac.js.map": "/static/js/main.286c64ac.js.map",
+    "453.b901e63a.chunk.js.map": "/static/js/453.b901e63a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5a33cc5c.css",
-    "static/js/main.1759cc36.js"
+    "static/js/main.286c64ac.js"
   ]
 }
