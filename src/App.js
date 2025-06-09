@@ -10,7 +10,7 @@ function App() {
     return (
         <BrowserRouter basename="/ero-react-interview">
             <Routes>
-                <Route path="/ero-react-interview" element={<Home />}>
+                <Route path="/" element={<Home />}>
                     <Route index element={<Home />} />
                 </Route>
                 <Route path="/table" element={<Table />} />
