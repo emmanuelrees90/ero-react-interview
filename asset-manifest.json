@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.5a33cc5c.css",
-    "main.js": "/static/js/main.b92f144a.js",
-    "static/js/453.b901e63a.chunk.js": "/static/js/453.b901e63a.chunk.js",
-    "index.html": "/index.html",
-    "main.5a33cc5c.css.map": "/static/css/main.5a33cc5c.css.map",
-    "main.b92f144a.js.map": "/static/js/main.b92f144a.js.map",
-    "453.b901e63a.chunk.js.map": "/static/js/453.b901e63a.chunk.js.map"
+    "main.css": "/ero-react-interview/static/css/main.5a33cc5c.css",
+    "main.js": "/ero-react-interview/static/js/main.df441fbb.js",
+    "static/js/453.b901e63a.chunk.js": "/ero-react-interview/static/js/453.b901e63a.chunk.js",
+    "index.html": "/ero-react-interview/index.html",
+    "main.5a33cc5c.css.map": "/ero-react-interview/static/css/main.5a33cc5c.css.map",
+    "main.df441fbb.js.map": "/ero-react-interview/static/js/main.df441fbb.js.map",
+    "453.b901e63a.chunk.js.map": "/ero-react-interview/static/js/453.b901e63a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5a33cc5c.css",
-    "static/js/main.b92f144a.js"
+    "static/js/main.df441fbb.js"
   ]
 }
