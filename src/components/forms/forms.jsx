@@ -1,6 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import './forms.css'
 
+const Child = ({onChange}) => {
+    return (
+        <div>
+            <button onClick={onChange}>click me</button>
+        </div>
+    )
+}
+
 function MyForm() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -12,24 +20,37 @@ function MyForm() {
     console.log('Email:', email);
   };
 
-//   useEffect(() => {
+  const handleOnChange = () => {
+    console.log("from child")
+  }
 
-//     fetch('https://api.example.com/posts', {
-//         method: 'POST',
-//         headers: {
-//         'Content-Type': 'application/json'
-//         },
-//         body: JSON.stringify({ title: 'Hello', content: 'World' })
-//         })
-//         .then(response => response.json())
-//         .then(data => console.log('Success:', data))
-//         .catch(error => console.error('Error:', error));
+  useEffect(() => {
 
-//     return () => null
+    for(var i = 0; i < 5; i++) {
+        const fun = (function(input){
+            console.log(input)
+        })(i)
+        setTimeout(() => fun , 300)
+    }
 
-//   },[])
+    // fetch('https://api.example.com/posts', {
+    //     method: 'POST',
+    //     headers: {
+    //     'Content-Type': 'application/json'
+    //     },
+    //     body: JSON.stringify({ title: 'Hello', content: 'World' })
+    //     })
+    //     .then(response => response.json())
+    //     .then(data => console.log('Success:', data))
+    //     .catch(error => console.error('Error:', error));
+
+    return () => null
+
+  },[])
 
   return (
+    <>
+    <Child onChange={handleOnChange}></Child>
     <form className='container' onSubmit={handleSubmit}>
       <label>
         Name:
@@ -51,6 +72,8 @@ function MyForm() {
       <br />
       <button type="submit">Submit</button>
     </form>
+    </>
+    
   );
 }
 
