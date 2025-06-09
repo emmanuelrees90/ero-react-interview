@@ -5,11 +5,11 @@ import './table.css';
 export const Table = () => {
     const [data, setData] = useState([]);
 
-    const [search, setSearch] = useState('');
+    // const [search, setSearch] = useState('');
 
-    const filteredData = useMemo(() => {
-        return dummyData.filter(item => item.title.toLowerCase().includes(search.toLowerCase()));
-    }, [search]);
+    // const filteredData = useMemo(() => {
+    //     return dummyData.filter(item => item.title.toLowerCase().includes(search.toLowerCase()));
+    // }, [search]);
 
     const dummyData = [
         {

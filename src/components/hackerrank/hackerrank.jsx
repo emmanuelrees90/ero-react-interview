@@ -5,22 +5,22 @@ export const Hackerrank = () => {
     const [result, setResult] = useState(null);
     const [shiftResult, setShiftResult] = useState(null);
 
-    const arr = [
-        [1, 1, 1, 0, 0, 0],
-        [0, 1, 0, 0, 0, 0],
-        [1, 1, 1, 0, 0, 0],
-        [0, 0, 2, 4, 4, 0],
-        [0, 0, 0, 2, 0, 0],
-        [0, 0, 1, 2, 4, 0],
-    ];
+    // const arr = [
+    //     [1, 1, 1, 0, 0, 0],
+    //     [0, 1, 0, 0, 0, 0],
+    //     [1, 1, 1, 0, 0, 0],
+    //     [0, 0, 2, 4, 4, 0],
+    //     [0, 0, 0, 2, 0, 0],
+    //     [0, 0, 1, 2, 4, 0],
+    // ];
 
-    const array = [1, 2, 3, 4, 5];
+    // const array = [1, 2, 3, 4, 5];
 
-    const arrayToSort = [7, 1, 3, 2, 4, 5, 6];
+    // const arrayToSort = [7, 1, 3, 2, 4, 5, 6];
 
-    const arrayToSum = [1,3,4];
+    // const arrayToSum = [1,3,4];
 
-    const stringArr = "hello"
+    // const stringArr = "hello"
 
     useEffect(() => {
         // for(let i = 0; i < 6; ++i) {
@@ -29,7 +29,7 @@ export const Hackerrank = () => {
 
         // }
 
-        let total = 0;
+        //let total = 0;
         //let i = 0;
 
         // function sumUp(array, i = 0) {
