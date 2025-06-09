@@ -9,6 +9,9 @@ on:
   pull_request:
     branches: [ "main" ]
 
+permissions:
+  contents: write  # 🟢 Required for deploy
+
 jobs:
   build:
 
