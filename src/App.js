@@ -1,23 +1,23 @@
 import { Home } from 'components/home/home';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route, HashRouter } from 'react-router-dom';
 import './App.css';
 import React from 'react';
 import { Table } from 'components/table-react/table';
 import { Hackerrank } from 'components/hackerrank/hackerrank';
 import MyForm from 'components/forms/forms';
+import { NotFoundPage } from 'components/not-found-page/notFoundPage';
 
 function App() {
     return (
-        <BrowserRouter basename="/ero-react-interview">
+        <HashRouter>
             <Routes>
-                <Route path="/" element={<Home />}>
-                    <Route index element={<Home />} />
-                </Route>
+                <Route path="/" element={<Home />}></Route>
                 <Route path="/table" element={<Table />} />
                 <Route path="/hack" element={<Hackerrank />} />
                 <Route path="/form" element={<MyForm />} />
+                <Route path="*" element={<NotFoundPage />} />
             </Routes>
-        </BrowserRouter>
+        </HashRouter>
     );
 }
 
