@@ -4,7 +4,7 @@ import './home.css';
 export const Home = () => {
     return (
         <div className="container">
-            Welcome to React Interview
+            <h1>Testing Github Actions CI CD Pipeline</h1>
         </div>
     )
 }

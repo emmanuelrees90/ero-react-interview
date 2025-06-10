@@ -61,7 +61,7 @@ export const Table = () => {
                 />
             </div>
 
-            <div className="container">
+            <div className="card-container">
                 {data.map((item, index) => (
                     <div className="card" key={index}>
                         <div className="card-text">{item.title}</div>
