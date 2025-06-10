@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ero-react-interview/static/css/main.5a33cc5c.css",
+    "main.css": "/ero-react-interview/static/css/main.fe0aca99.css",
     "main.js": "/ero-react-interview/static/js/main.04b1a6a7.js",
     "static/js/453.b901e63a.chunk.js": "/ero-react-interview/static/js/453.b901e63a.chunk.js",
     "index.html": "/ero-react-interview/index.html",
-    "main.5a33cc5c.css.map": "/ero-react-interview/static/css/main.5a33cc5c.css.map",
+    "main.fe0aca99.css.map": "/ero-react-interview/static/css/main.fe0aca99.css.map",
     "main.04b1a6a7.js.map": "/ero-react-interview/static/js/main.04b1a6a7.js.map",
     "453.b901e63a.chunk.js.map": "/ero-react-interview/static/js/453.b901e63a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5a33cc5c.css",
+    "static/css/main.fe0aca99.css",
     "static/js/main.04b1a6a7.js"
   ]
 }
