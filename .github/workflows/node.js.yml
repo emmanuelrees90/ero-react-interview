@@ -21,7 +21,7 @@ jobs:
         run: echo "JAVA_VERSION=21" >> $GITHUB_ENV
 
       - name: Test JAVA_VERSION
-        run: echo "The Java version is $JAVA_VERSION"
+        run: echo "The Java version is $JAVA_VERSION ${{ env.SONAR_TOKEN }}"
   sonarqube:
     name: SonarQube
     runs-on: ubuntu-latest
