@@ -14,6 +14,9 @@ permissions:
   contents: write  # 🟢 Required for deploy
 
 jobs:
+  build:
+    env:
+        JAVA_VERSION: '21'
   sonarqube:
     name: SonarQube
     runs-on: ubuntu-latest
@@ -24,6 +27,8 @@ jobs:
           fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
       - name: SonarQube Scan
         uses: SonarSource/sonarqube-scan-action@v5
+      - name: Print name
+        run: echo "Hello $JAVA_VERSION"
       - name: Debug env
         run: |
           echo "SONAR_TOKEN is ${SONAR_TOKEN:+set}"
