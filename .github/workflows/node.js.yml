@@ -21,7 +21,7 @@ jobs:
         run: echo "JAVA_VERSION=21" >> $GITHUB_ENV
 
       - name: Test JAVA_VERSION
-        run: echo "The Java version is $JAVA_VERSION ${{ SONAR_TOKEN }} ${{ env.SONAR_TOKEN }} ${{ var.SONAR_TOKEN }}"
+        run: echo "The Java version is $JAVA_VERSION  ${{ env.SONAR_TOKEN }} ${{ var.SONAR_TOKEN }}"
   sonarqube:
     name: SonarQube
     runs-on: ubuntu-latest
@@ -34,8 +34,14 @@ jobs:
         uses: SonarSource/sonarqube-scan-action@v5
       - name: Debug env
         run: |
-          echo "SONAR_TOKEN is ${SONAR_TOKEN:+set}"
-          echo "SONAR_HOST_URL is ${SONAR_HOST_URL:+set}"
+         if [ -z "$SONAR_TOKEN" ]; then
+          echo "❌ SONAR_TOKEN is not set. Please add it in repository or environment secrets."
+          exit 1
+         fi
+         if [ -z "$DEPLOY_TOKEN" ]; then
+          echo "❌ DEPLOY_TOKEN is not set. Please add it in repository or environment secrets."
+          exit 1
+         fi
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
