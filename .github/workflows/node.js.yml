@@ -42,9 +42,7 @@ jobs:
           echo "❌ DEPLOY_TOKEN is not set. Please add it in repository or environment secrets."
           exit 1
          fi
-        env:
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
+
   build:
 
     runs-on: ubuntu-latest
