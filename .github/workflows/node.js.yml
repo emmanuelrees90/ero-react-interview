@@ -31,7 +31,7 @@ jobs:
         with:
           fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
       - name: SonarQube Scan
-        uses: SonarSource/sonarqube-scan-action@v5
+        uses: sonarsource/sonarqube-scan-action@master
       - name: Debug env
         run: |
          if [ -z "$SONAR_TOKEN" ]; then
@@ -42,7 +42,9 @@ jobs:
           echo "❌ DEPLOY_TOKEN is not set. Please add it in repository or environment secrets."
           exit 1
          fi
-
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
   build:
 
     runs-on: ubuntu-latest
